@@ -6,4 +6,4 @@ RUN mkdir /opt/app
 WORKDIR /opt/app
 COPY . /opt/app/
 RUN pip install -r requirements.txt
-ENTRYPOINT FLASK_APP=/opt/app/app.py
+ENTRYPOINT FLASK_APP=/opt/app/app.py flask run --host 127.0.0.1
